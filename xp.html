@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Experience - Dennis Ho</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4e7c5;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .left-column {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .right-column {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .photo-item {
+    display: flex;
+    align-items: center; /* vertically center text */
+    gap: 1rem; /* space between image and text */
+  }
+
+  .photo-item img {
+    width: 410px; /* fixed width for all images */
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; /* prevent image from shrinking */
+  }
+
+  .photo-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  /* Top-right Back Button */
+  .top-right-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      max-width: 100%;
+      padding: 0;
+    }
+    .photo-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .photo-item img {
+      width: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .top-right-button {
+      top: 10px;
+      right: 10px;
+    }
+  }
+</style>
+</head>
+<body class="is-preload">
+
+<!-- Top Right Back Button -->
+<div class="top-right-button">
+  <ul class="actions stacked">
+    <li><a href="index.html" class="button">Back to Home</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <!-- LEFT COLUMN: Text -->
+  <div class="left-column">
+
+    <section>
+      <h1>Work Experience</h1>
+      <p>
+        I currently work at Target, where my primary focus is providing excellent customer service. In addition to stocking items on the sales floor and organizing the backroom, I assist customers by helping them locate products, answering questions, and ensuring a positive shopping experience. This role has strengthened my communication and problem-solving skills, as well as my ability to stay organized in a fast-paced environment. I was also trained to remain calm and professional during any type of customer interaction.
+      </p>
+    </section>
+
+    <section>
+      <h1>Volunteer Experience</h1>
+      <p>
+        My recent volunteer experience comes from serving as an IT Support volunteer for my local church, St. Joseph Catholic Church. In this role, I helped resolve issues such as buildings with poor Wi-Fi connectivity and rolled out Windows 11 updates after Windows 10 reached end-of-life. Additionally, I have informal experience troubleshooting and building PCs for friends, which has helped me strengthen my hands-on technical skills and problem-solving abilities.
+      </p>
+    </section>
+
+    <section>
+      <h1>Home Projects</h1>
+
+      <p><strong>Home Lab:</strong><br>
+      I built a home lab using VirtualBox on one of my PCs with Windows Server 2025. In this lab, I simulated creating users, managing passwords, handling account lockouts, setting folder permissions, and resetting user accounts in Active Directory. This project allowed me to practice real-world IT administrative tasks in a safe, controlled environment.</p>
+
+      <p><strong>Router Conversion Project:</strong><br>
+      I converted an old T-Mobile router into a usable Asus router by flashing the firmware. I did this to extend the lifespan of the device, reduce electronic waste, save money, and gain practical experience with networking hardware and firmware management.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- RIGHT COLUMN: Images with text next to them -->
+  <div class="right-column">
+    <div class="photo-item">
+      <img src="images/work.png" alt="Work Experience" class="small-img">
+      <p>Working at Target was a mix of hard labor and customer service</p>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/stjos.png" alt="Volunteer Experience">
+      <p>Do not have a photo due to privacy concerns</p>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/homelab.jpg" alt="Home Projects">
+      <p>Home lab PC with Windows Server 2025 on VirtualBox for hands-on practice</p>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/router.png" alt="Home Projects">
+      <p>Guided project: I converted an old T-Mobile router to a usable Asus router using a PC, Ethernet cable, firmware files, and flashing tools like PuTTY and WinSCP, learning about networking hardware and firmware management in the process.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

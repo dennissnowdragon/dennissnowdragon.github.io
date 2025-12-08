@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Me</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4e7c5;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .left-column {
+    flex: 1;
+    padding-right: 2rem;
+    max-width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .right-column {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* reduced spacing */
+    box-sizing: border-box;
+  }
+
+  /* Each photo-item is a flex row: image left, text right */
+  .photo-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space between image and text */
+  }
+
+  .photo-item img {
+    width: 500px; /* fixed width so images align */
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; /* prevent shrinking */
+  }
+
+  .photo-item p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  /* Top right button */
+  .top-right-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    .left-column, .right-column {
+      max-width: 100%;
+      padding: 0;
+    }
+    .photo-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .photo-item img {
+      width: 50%;
+      margin-bottom: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body class="is-preload">
+
+<!-- Top Right Back Button -->
+<div class="top-right-button">
+  <ul class="actions stacked">
+    <li><a href="index.html" class="button">Back to Home</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <!-- LEFT COLUMN -->
+  <div class="left-column">
+    <section>
+      <h1>Introduction</h1>
+      <p>I’m a recent Cybersecurity graduate from the University of Maryland Global Campus, and I’ve been surrounded by technology for as long as I can remember. I began developing basic troubleshooting skills in late high school and early college, which quickly grew into a passion for helping others solve technical problems. Over the years, I’ve used my knowledge to support friends, family, and my community with their IT needs. Since graduating, I’ve strengthened my skills by earning my CompTIA A+ certification and pursuing additional IT certifications, preparing myself for a professional role in technical support.</p>
+    </section>
+
+    <section>
+      <h2>My Tech Background</h2>
+      <p>I’ve been building, maintaining, and troubleshooting PCs since high school, gaining hands-on experience through years of upgrades and repairs. Over time, I’ve used that knowledge to help friends, family, and now my community as a St. Joseph’s IT volunteer. I also manage my home network setup to keep everything running smoothly through multiple router and modem upgrades. To continue improving, I’ve built a small lab computer where I practice common IT help desk scenarios.</p>
+    </section>
+
+    <section>
+      <h2>My Motivation</h2>
+      <p>Technology has shaped my life in meaningful ways, from the games I grew up playing to the tools that keep me connected with people. I enjoy helping others solve IT issues and using my experience to get them up and running again. Problem-solving gives me a sense of accomplishment, especially when I can turn confusion into clarity for someone else. My long-term goal is to build a career in cybersecurity by growing through roles like Help Desk.</p>
+    </section>
+  </div>
+
+  <!-- RIGHT COLUMN: Images with text on right -->
+  <div class="right-column">
+    <div class="photo-item">
+      <img src="images/cert.png" alt="Certification" class="small-img">
+      <p>My CompTIA A+ certification</p>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/jpc.png" alt="Home Lab">
+      <p>Updating the BIOS of a friend's computer for a CPU upgrade</p>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/firstpc2.png" alt="First PC">
+      <p>One of the first PC builds</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

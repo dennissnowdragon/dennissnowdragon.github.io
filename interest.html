@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Interests - Dennis Ho</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4e7c5;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .left-column {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .right-column {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  /* Each photo with text side by side */
+  .photo-item {
+    display: flex;
+    align-items: center; /* vertically center text */
+    gap: 0.5rem;         /* space between image and text */
+    margin-bottom: 0;     /* remove extra spacing */
+  }
+
+  .photo-item img {
+    width: 30%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .photo-item .caption {
+    flex: 1;                 /* take remaining space */
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  /* Top right button */
+  .top-right-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      max-width: 100%;
+      padding: 0;
+    }
+    .photo-item img {
+      width: 50%;
+    }
+    .top-right-button {
+      top: 10px;
+      right: 10px;
+    }
+  }
+</style>
+</head>
+<body class="is-preload">
+
+<!-- Top Right Back Button -->
+<div class="top-right-button">
+  <ul class="actions stacked">
+    <li><a href="index.html" class="button">Back to Home</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <!-- LEFT COLUMN: Text -->
+  <div class="left-column">
+
+    <section>
+      <h1>Herman Miller Curation</h1>
+      <p>I enjoy curating my home office setup with high-quality Herman Miller furniture, combining ergonomic comfort with aesthetic appeal for both work and personal projects. I have spent about 4 years colelcting, searching for second hand herman miller on sites such as facebook marketplace and craigslist.</p>
+    </section>
+
+    <section>
+      <h1>Yo-Yoing</h1>
+      <p>Yo-yoing is one of my favorite skill toys, helping me improve hand-eye coordination, focus, and precision while enjoying a fun hobby. I started when I was in sixth grade, and the hobby has stuck with me since.</p>
+    </section>
+
+    <section>
+      <h1>Kendama</h1>
+      <p>Kendama is another skill toy Irecently picked up and enjoy, allowing me to challenge myself with tricks, improve dexterity, and stay engaged with a playful learning activity.</p>
+    </section>
+
+    <section>
+      <h1>Rock Climbing</h1>
+      <p>Rock climbing allows me to push my physical limits, build strength, and sharpen problem-solving skills while motivating both myself and others.</p>
+    </section>
+
+    <section>
+      <h1>Hiking</h1>
+      <p>Hiking gives me the opportunity to explore nature, stay active, and clear my mind while taking in beautiful landscapes.</p>
+    </section>
+
+  </div>
+
+  <!-- RIGHT COLUMN: Photos with captions on right side -->
+  <div class="right-column">
+    <div class="photo-item">
+      <img src="images/pcphoto.png" alt="Herman Miller Setup">
+      <div class="caption">Curated office/bedroom with Herman Miller furniture</div>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/yoyo.png" alt="Yo-Yoing">
+      <div class="caption">Started to learn looping yo-yo style, manipulating two yo-yos at the same time</div>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/kendamaphoto1.png" alt="Kendama">
+      <div class="caption">enjoying a peaceful kendama session by the water</div>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/climbingphoto1.png" alt="Rock Climbing">
+      <div class="caption">Indoor bouldering</div>
+    </div>
+
+    <div class="photo-item">
+      <img src="images/hikingphoto1.png" alt="Hiking">
+      <div class="caption">Enjoying scenic hikes</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
